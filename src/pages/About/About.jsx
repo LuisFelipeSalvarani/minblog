@@ -3,7 +3,9 @@ import styles from "./About.module.css"
 
 const About = () => {
   return (
-    <div>About</div>
+    <div>
+      <h2>Sobre</h2>
+    </div>
   )
 }
 
