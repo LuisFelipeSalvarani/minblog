@@ -1,4 +1,4 @@
-import {db} from "../firebase/config";
+import { db, auth } from "../firebase/config";
 
 import {
     getAuth,
@@ -17,8 +17,6 @@ export const useAutehntication = () => {
     // cleanup
     // deal with memory leak
     const [cancelled, setCancelled] = useState(false);
-
-    const auth = getAuth();
 
     function checkIfIsCancelled() {
         if (cancelled) {
