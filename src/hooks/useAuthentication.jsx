@@ -1,7 +1,6 @@
-import { db, auth } from "../firebase/config";
+import { auth } from "../firebase/config";
 
 import {
-    getAuth,
     createUserWithEmailAndPassword,
     updateProfile,
     signOut,
@@ -10,7 +9,7 @@ import {
 
 import { useState, useEffect } from 'react';
 
-export const useAutehntication = () => {
+export const useAuthentication = () => {
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(null);
 
